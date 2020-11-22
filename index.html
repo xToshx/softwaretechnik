@@ -3,11 +3,20 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Titel der Seite | Name der Website</title>
+    <script lang="javascript" src="spiel.js"></script>
+    <title>Browsergame</title>
   </head>
   <body>
-    <!-- Sichtbarer Dokumentinhalt im body -->
-    <p>Sehen Sie sich den Quellcode dieser Seite an.
-      <kbd>(Kontextmenu: Seitenquelltext anzeigen)</kbd></p>
+    <h1>Schere, Stein, Papier</h1>
+    <label for="cars">Wähle dein Spielzug</label>
+
+	<select id="spielzug">
+		 <option selected value="1">Schere</option>
+		 <option value="2">Stein</option>
+		 <option value="3">Papier</option>
+	</select>
+
+	<button onclick="playGame()">Spielen</button>
+    
   </body>
 </html>
