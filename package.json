@@ -1,0 +1,36 @@
+{
+  "name": "softwaretechnik",
+  "version": "1.0.0",
+  "description": "Spiel",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xToshx/softwaretechnik.git"
+  },
+  "keywords": [
+    "Vod7kone5!"
+  ],
+  "author": "Marco Warzel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xToshx/softwaretechnik/issues"
+  },
+  "homepage": "https://github.com/xToshx/softwaretechnik#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "browser-sync": "^2.26.13",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-uglify": "^3.0.2",
+    "jquery": "^3.5.1"
+  }
+}
