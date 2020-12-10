@@ -25,21 +25,15 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB }}
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-- 
-name: Send mail
-  uses: dawidd6/action-send-mail@v2
+
+ - name: Send some mail
+  uses: wadeww/send-email-action@master
   with:
     server_address: smtp.gmail.com
-    server_port: 465
+    port: 465
     username: ${{secrets.MAIL_USERNAME}}
     password: ${{secrets.MAIL_PASSWORD}}
-    subject: A New Version is pushed to Github
-    # Literal body:
-    body: A new Version from the Game is pushed to the repository
-    # Read file contents as body:
-    body: file://README.md
-    to: marco.warzel@googlemail.com
-    from: Marco Warzel # <user@example.com>
-    # Optional content type (defaults to text/plain):
-    content_type: text/html
-    
+    subject: Workflow finished
+    body: Job completed ${{job.status}}
+    to: mwarzel@gmail.com
+    from: Me
