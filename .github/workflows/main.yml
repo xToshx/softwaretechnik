@@ -10,7 +10,7 @@ on:
   pull_request:
     branches: [ main ]
  
- name: Sonarcloud Scan
+name: Sonarcloud Scan
 jobs:
   sonarcloud:
     runs-on: ubuntu-latest
