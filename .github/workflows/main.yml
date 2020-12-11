@@ -20,3 +20,14 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB }}
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+    - name: Send some mail
+      uses: wadeww/send-email-action@master
+      with:
+        server_address: smtp.gmail.com
+        port: 465
+        username: ${{secrets.MAIL_USERNAME}}
+        password: ${{secrets.MAIL_PASSWORD}}
+        subject: Workflow finished
+        body: Job completed ${{job.status}}
+        to: mwarzel@gmail.com
+        from: Me
